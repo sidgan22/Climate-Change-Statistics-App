@@ -1,5 +1,6 @@
 import 'package:evsbeta1/timeline.dart';
 import 'package:flutter/material.dart';
+import 'anthro.dart';
 class homescr1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class _homescrState extends State<homescr> {
             SizedBox(height: 20.0,),
             RaisedButton(
               color: Colors.green,
-              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>tl()));},
+              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>ant()));},
               child: Text("Anthropogenic"),
             ),
             SizedBox(height: 20.0,),
@@ -54,7 +55,7 @@ class _homescrState extends State<homescr> {
 //        title: Text("Climate Change"),
 //        centerTitle: true,
 //      ),
-      body: Container(decoration: BoxDecoration(color: Color(0xFFCFD260)),child:ListView(
+      body: Container(decoration: BoxDecoration(color: Colors.amberAccent),child:ListView(
         children: <Widget>[
           Container(
             height:MediaQuery.of(context).size.height/5,
@@ -78,8 +79,8 @@ class _homescrState extends State<homescr> {
                 child:CircleAvatar(radius:MediaQuery.of(context).size.width/8,child: ClipOval(child: Image.asset("assets/cc.jpg"),),),
               ),
               contentPadding: EdgeInsets.symmetric(horizontal:20.0,vertical: 30.0),
-              title: Text("Global Warming",style: TextStyle(fontSize: 18.0),),
-              subtitle: Text("Timeline of events leading to the onset of Climate change.",style: TextStyle(fontSize: 15.0),),
+              title: Text("Global Warming",style: TextStyle(fontSize: 18.0,fontFamily: "Montserrat",),),
+              subtitle: Text("Timeline of events leading to the onset of Climate change.",style: TextStyle(fontSize: 15.0,fontFamily: "Montserrat",),),
             ),),
           //color: Color(0xFF5288AB),
           SizedBox(height: 15.0,),
@@ -98,8 +99,8 @@ class _homescrState extends State<homescr> {
                 child:CircleAvatar(radius:MediaQuery.of(context).size.width/8,child: ClipOval(child: Image.asset("assets/st.jpg"),),),
               ),
               contentPadding: EdgeInsets.symmetric(horizontal:20.0,vertical: 30.0),
-              title: Text("Statistics",style: TextStyle(fontSize: 18.0),),
-              subtitle: Text("Region-wise statistics on weather data.",style: TextStyle(fontSize: 15.0),),
+              title: Text("Statistics",style: TextStyle(fontSize: 18.0,fontFamily: "Montserrat",),),
+              subtitle: Text("Region-wise statistics on weather data.",style: TextStyle(fontSize: 15.0,fontFamily: "Montserrat",),),
             ),),
           SizedBox(height: 15.0,),
           Card(
@@ -122,8 +123,8 @@ class _homescrState extends State<homescr> {
                 child:CircleAvatar(radius:MediaQuery.of(context).size.width/8,child: ClipOval(child: Image.asset("assets/fac.jpg",height: 200.0,width: 200.0,),),),
               ),
               contentPadding: EdgeInsets.symmetric(horizontal:20.0,vertical: 30.0),
-              title: Text("Factors",style: TextStyle(fontSize: 18.0),),
-              subtitle: Text("Anthropogenic and natural factors affecting climate change.",style: TextStyle(fontSize: 15.0),),
+              title: Text("Factors",style: TextStyle(fontSize: 18.0,fontFamily: "Montserrat",),),
+              subtitle: Text("Anthropogenic and natural factors affecting climate change.",style: TextStyle(fontSize: 15.0,fontFamily: "Montserrat",),),
             ),),
           SizedBox(height: 15.0,),
           Card(
@@ -141,8 +142,8 @@ class _homescrState extends State<homescr> {
                 child:CircleAvatar(radius:MediaQuery.of(context).size.width/8,child: ClipOval(child: Image.asset("assets/rm.jpg",height: 200.0,width: 200.0,),),),
               ),
               contentPadding: EdgeInsets.symmetric(horizontal:20.0,vertical: 30.0),
-              title: Text("Mitigation 101",style: TextStyle(fontSize: 18.0),),
-              subtitle: Text("Combating sustainable development.",style: TextStyle(fontSize: 15.0),),
+              title: Text("Mitigation 101",style: TextStyle(fontSize: 18.0,fontFamily: "Montserrat",),),
+              subtitle: Text("Combating sustainable development.",style: TextStyle(fontSize: 15.0,fontFamily: "Montserrat",),),
             ),),
         ],
       ),),
