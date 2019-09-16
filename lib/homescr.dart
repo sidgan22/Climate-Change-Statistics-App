@@ -24,18 +24,18 @@ class _homescrState extends State<homescr> {
   Widget _popUp(BuildContext context){
     return AlertDialog(
       backgroundColor: Colors.amber,
-      title: Text("Factors",style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Montserrat",fontSize:25.0),),
+      title: Text("Factors",style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Montserrat",fontSize:20.0),),
       elevation: 6.0,
-      content: Container(height: MediaQuery.of(context).size.height/6,child:Center(
+      content: Container(height: MediaQuery.of(context).size.height/5,child:Center(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 20.0,),
+            SizedBox(height: 8.0,),
             RaisedButton(
               color: Colors.green,
               onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>ant()));},
               child: Text("Anthropogenic"),
             ),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 15.0,),
             RaisedButton(
               padding: EdgeInsets.only(left: 35.0,right: 35.0),
               color: Colors.green,

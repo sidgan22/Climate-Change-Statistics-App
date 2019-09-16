@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
               child:Column(mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Padding(padding: EdgeInsets.only(top:h/5),child:
-                Center(child:Text("Climate\nChange",style:TextStyle(fontFamily:"Montserrat",fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white)))),
+                Center(child:Text("Climate\nChange",style:TextStyle(fontFamily:"Montserrat",fontSize: h/12,fontWeight: FontWeight.bold,color: Colors.white)))),
                 SizedBox(height:100.0,),
                 Image.asset("assets/cc.gif",height:w/2,width: w/1.5,colorBlendMode: BlendMode.softLight,),
           ],
