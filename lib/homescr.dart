@@ -1,6 +1,8 @@
+import 'package:evsbeta1/miti.dart';
 import 'package:evsbeta1/timeline.dart';
 import 'package:flutter/material.dart';
 import 'anthro.dart';
+import 'nat.dart';
 class homescr1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class _homescrState extends State<homescr> {
             RaisedButton(
               padding: EdgeInsets.only(left: 35.0,right: 35.0),
               color: Colors.green,
-              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>tl()));},
+              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>nat()));},
               child: Text("Natural"),
             ),
           ],
@@ -133,6 +135,9 @@ class _homescrState extends State<homescr> {
             elevation: 4.0,
             borderOnForeground: true,
             child:ListTile(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>miti()));
+              },
               isThreeLine: true,
               leading: Container(
                 padding: EdgeInsets.only(right: 12.0),
