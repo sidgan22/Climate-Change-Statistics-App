@@ -1,4 +1,4 @@
-# evsbeta1
+# Climate change - Flutter app
 
 Climate change awareness  app
 
